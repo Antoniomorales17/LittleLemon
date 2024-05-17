@@ -1,0 +1,112 @@
+.navbar {
+    padding: 30px 0;
+    position: sticky;
+    top: 0;
+    transition: all 0.3s ease;
+    z-index: 50;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255, 255, 255); /* Para mejor visibilidad */
+}
+
+.leftSection {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.companyLogo {
+    width: 100px; /* Ajusta el tamaño según sea necesario */
+    margin-left: auto; /* Mueve el logo a la derecha */
+}
+
+.desktopMenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    max-width: 1200px;
+}
+
+.desktopMenuListItem {
+    color: #080808;
+    cursor: pointer;
+    font-size: 20px;
+    transition: all 0.3s ease;
+    justify-content: space-between;
+    margin-right: 20px; /* Ajusta el margen entre elementos según sea necesario */
+}
+
+.desktopMenuListItem:hover {
+    color: #000;
+}
+
+.desktopMenuBtn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #666;
+}
+
+.desktopMenuImg {
+    width: 80px; /* Ajusta el tamaño del icono de reserva */
+}
+
+.mobMenu {
+    display: none;
+    cursor: pointer;
+    width: 40px;
+}
+
+.navMenu {
+    display: none;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.listItem {
+    color: #666;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.listItem:hover {
+    color: #000;
+}
+
+.active-header {
+    background-color: #fff;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.05);
+    padding: 15px 0;
+}
+
+.active-header .logo {
+    margin-top: 0 !important;
+}
+
+@media (max-width: 768px) {
+    .desktopMenu {
+        display: none;
+    }
+
+    .mobMenu {
+        display: block;
+    }
+
+    .navMenu {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        width: 100%;
+        background-color: white;
+        border-top: 1px solid #eaeaea;
+        padding: 20px;
+    }
+}
