@@ -1,29 +1,31 @@
-import React from 'react'
-import { Link } from 'react-scroll'
+import React from 'react';
+import food1 from '../../assets/food1.png';
+import './Intro.css';
 
 const Intro = () => {
   return (
     <section id='intro'>
-     <div className='introContent'>
-      <span className='Hello'>Bienvenidos,</span>
-      <span className='introText'>
-        Soy <span className='introName'>Antonio</span><br/>
-        Programador Junior capaz de hacer <br/>cosas increíbles
-      </span>
-      <p className='introPara'>
-        Con experiencia en marketing y comercio electrónico,<br/>
-        siempre he sentido una profunda fascinación por la tecnología y el<br/>
-        mundo digital. En mi nueva etapa como programador junior, estoy<br/>
-        decidido a demostrar mi pasión y habilidades, creando soluciones<br/>
-        impactantes e innovadoras. Estoy listo para enfrentar cualquier<br/>
-        desafío y seguir sorprendiendo al mundo con mis logros.
-      </p>
-      
+      <header>
+        <article className="call-to-action">
+          <section className="hero-text">
+            <h1>Little Lemon</h1>
+            <h2>Chicago</h2>
+            <p className="subsection">
+              We are a family-owned Mediterranean restaurant, located on Maldove Street in Chicago, Illinois. We focus on traditional recipes served with a modern twist.
+            </p>
+            <br />
+            <button className="action-button" onClick={() => document.getElementById('reservation').scrollIntoView({ behavior: 'smooth' })}>
+              Reserve a table
+            </button>
+          </section>
 
-      </div>
-    
-</section>
-  )
+          <section className="hero-image">
+            <img src={food1} alt="Little Lemon restaurant cuisine" />
+          </section>
+        </article>
+      </header>
+    </section>
+  );
 }
 
-export default Intro
+export default Intro;

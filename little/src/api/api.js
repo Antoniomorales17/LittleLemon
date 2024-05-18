@@ -1,6 +1,4 @@
-// Copia el contenido de https://raw.githubusercontent.com/Meta-Front-End-Developer-PC/capstone/master/api.js
-const fetchAPI = (date) => {
-    // Simulación de tiempos de reserva
+const fetchAPI = async (date) => {
     const times = [
         "17:00",
         "17:30",
@@ -13,12 +11,20 @@ const fetchAPI = (date) => {
         "21:00",
         "21:30"
     ];
-    return times;
+
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            resolve(times);
+        }, 1000);
+    });
 };
 
-const submitAPI = (formData) => {
-    // Simulación de envío exitoso
-    return true;
+const submitAPI = async (formData) => {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            resolve(true);
+        }, 1000);
+    });
 };
 
 export { fetchAPI, submitAPI };

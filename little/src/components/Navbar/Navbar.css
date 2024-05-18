@@ -1,5 +1,5 @@
 .navbar {
-    padding: 30px 0;
+    padding: 10px 20px;
     position: sticky;
     top: 0;
     transition: all 0.3s ease;
@@ -7,35 +7,29 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(255, 255, 255); /* Para mejor visibilidad */
+    background-color: #fff;
 }
 
 .leftSection {
     display: flex;
     align-items: center;
-    gap: 20px;
 }
 
 .companyLogo {
-    width: 100px; /* Ajusta el tamaño según sea necesario */
-    margin-left: auto; /* Mueve el logo a la derecha */
+    width: 80px; /* Ajusta según sea necesario */
 }
 
 .desktopMenu {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    margin: auto;
-    max-width: 1200px;
 }
 
 .desktopMenuListItem {
     color: #080808;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 16px;
+    margin-right: 20px;
     transition: all 0.3s ease;
-    justify-content: space-between;
-    margin-right: 20px; /* Ajusta el margen entre elementos según sea necesario */
 }
 
 .desktopMenuListItem:hover {
@@ -43,30 +37,41 @@
 }
 
 .desktopMenuBtn {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    background: none;
-    border: none;
+    background-color: #f0c14b;
+    border: 1px solid #a88734;
+    border-radius: 4px;
+    color: #111;
     cursor: pointer;
-    font-size: 16px;
-    color: #666;
+    display: inline-block;
+    font-size: 20px;
+    padding: 8px 12px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.desktopMenuBtn:hover {
+    background-color: #ddb347;
 }
 
 .desktopMenuImg {
-    width: 80px; /* Ajusta el tamaño del icono de reserva */
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
 }
 
 .mobMenu {
     display: none;
     cursor: pointer;
-    width: 40px;
+    width: 30px; 
 }
 
 .navMenu {
     display: none;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
+    align-items: center;
 }
 
 .listItem {
@@ -80,18 +85,8 @@
     color: #000;
 }
 
-.active-header {
-    background-color: #fff;
-    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.05);
-    padding: 15px 0;
-}
-
-.active-header .logo {
-    margin-top: 0 !important;
-}
-
 @media (max-width: 768px) {
-    .desktopMenu {
+    .desktopMenu, .desktopMenuBtn {
         display: none;
     }
 
@@ -104,9 +99,10 @@
         flex-direction: column;
         position: absolute;
         top: 60px;
+        left: 0;
         width: 100%;
         background-color: white;
         border-top: 1px solid #eaeaea;
-        padding: 20px;
+        padding: 10px 0;
     }
 }

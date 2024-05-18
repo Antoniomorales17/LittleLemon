@@ -1,80 +1,125 @@
-
-
 #reservation {
-    padding: 50px 0;
-    background-color: #f9f9f9;
-  }
-  
-  .reservation .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-  
-  .reservation .info {
-    flex: 1;
-    padding: 20px;
-  }
-  
-  .reservation .info h1 {
-    font-size: 2.5em;
-    color: #333;
-    margin-bottom: 20px;
-  }
-  
-  .reservation .info p {
-    font-size: 1.2em;
-    color: #666;
-    margin-bottom: 30px;
-  }
-  
-  .reservation .info form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .reservation .form-group {
-    margin-bottom: 20px;
-  }
-  
-  .reservation .form-group input,
-  .reservation .form-group select {
-    width: 100%;
-    padding: 10px;
-    font-size: 1em;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-  }
-  
-  .reservation .form-group input:focus,
-  .reservation .form-group select:focus {
-    border-color: #333;
-  }
-  
-  .reservation .info button {
-    padding: 15px 20px;
-    font-size: 1.1em;
-    color: #fff;
-    background-color: #333;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .reservation .info button:hover {
-    background-color: #555;
-  }
-  
-  .reservation .image {
-    flex: 1;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .reservation .image img {
-    max-width: 100%;
-    border-radius: 10px;
-  }
-  
+  padding: 50px 0;
+  background-color: #f9f9f9;
+}
+
+.reservation .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.reservation .info {
+  flex: 1;
+  padding: 20px;
+}
+
+.reservation .info h1 {
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.reservation .info p {
+  font-size: 1.2em;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.reservation .info form {
+  display: flex;
+  flex-direction: column;
+}
+
+.reservation .form-group {
+  margin-bottom: 20px;
+}
+
+.reservation .form-group input,
+.reservation .form-group select {
+  width: 100%;
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.reservation .form-group input:focus,
+.reservation .form-group select:focus {
+  border-color: #333;
+}
+
+.reservation .info button {
+  padding: 15px 20px;
+  font-size: 1.1em;
+  color: #fff;
+  background-color: #333;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.reservation .info button:hover {
+  background-color: #555;
+}
+
+.reservation .image {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+}
+
+.reservation .image img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.confirmation-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.confirmation-modal {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 500px;
+  width: 90%;
+}
+
+.modal-content h2 {
+  margin-bottom: 20px;
+  font-size: 2em;
+  color: #333;
+}
+
+.modal-content p {
+  font-size: 1.2em;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.modal-content button {
+  padding: 10px 20px;
+  font-size: 1.1em;
+  color: #fff;
+  background-color: #333;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.modal-content button:hover {
+  background-color: #555;
+}

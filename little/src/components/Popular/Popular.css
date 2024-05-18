@@ -1,188 +1,121 @@
+/* Popular.css */
 
-  
+.popular {
+  margin-top: 8rem;
+}
+
+@media (max-width: 768px) {
   .popular {
-    margin-top: 8rem;
-  }
-  
-  @media (max-width: var(--container-md)) {
-    .popular {
-      margin-top: 4rem;
-    }
-  }
-  
-  .popular .container {
-    margin: auto;
-    margin-left: 80px;
-  }
-  
-  @media (max-width: var(--container-md)) {
-    .popular .container {
-      margin-left: 20px;
-    }
-  }
-  
-  .popular .head {
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 1rem;
-    padding-right: 80px;
-  }
-  
-  @media (max-width: var(--container-md)) {
-    .popular .head {
-      margin-bottom: 2rem;
-      padding-right: 20px;
-    }
-  }
-  
-  .popular h2 {
-    color: var(--primary-text-color);
-    font-family: var(--title-font);
-    font-size: var(--text-8xl);
-    font-weight: 600;
-    margin-bottom: 1rem;
-  }
-  
-  @media (max-width: var(--container-md)) {
-    .popular h2 {
-      font-size: var(--text-6xl);
-      margin-bottom: 0;
-    }
-  }
-  
-  .popular .navigation {
-    align-items: center;
-    display: flex;
-    gap: 20px;
-  }
-  
-  .popular .navigation button {
-    padding: 14px 14px;
-    border: none;
-    background-color: #ddd;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-  }
-  
-  .popular .navigation button img {
-    user-select: none;
-  }
-  
-  @media (max-width: var(--container-md)) {
-    .popular .navigation button img {
-      height: 12px;
-      width: 12px;
-    }
-  }
-  
-  .popular .navigation .prev img {
-    transform: rotate(180deg);
-  }
-  
-  .popular .navigation .prev:hover,
-  .popular .navigation .next:hover {
-    transform: scale(0.9);
-  }
-  
-  .popular .navigation .disable {
-    opacity: 0.5;
-    pointer-events: none;
-  }
-  
-  .popular .items .react-multi-carousel-track {
-    gap: 20px;
-  }
-  
-  .popular .items .item {
-    background-color: var(--white);
-    border-radius: 16px;
-    padding: 8px 20px;
-    padding-top: 100px;
-    text-align: center;
-  }
-  
-  @media (max-width: var(--container-md)) {
-    .popular .items .item {
-      padding-top: 50px;
-    }
-  }
-  
-  .popular .items .item .img {
-    transform: scale(1.1);
-    user-select: none;
-  }
-  
-  @media (max-width: var(--container-md)) {
-    .popular .items .item .img {
-      min-width: max-content;
-      transform: scale(1);
-    }
-  }
-  
-  .popular .items .item .img img {
-    user-select: none;
-  }
-  
-  .popular .items .item .info {
     margin-top: 4rem;
   }
-  
-  @media (max-width: var(--container-md)) {
-    .popular .items .item .info {
-      margin-top: 3rem;
-    }
+}
+
+.popular .container {
+  margin: auto;
+  padding: 0 20px;
+}
+
+.popular .head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.popular h2 {
+  color: var(--primary-text-color);
+  font-family: var(--title-font);
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .popular h2 {
+    font-size: 2rem;
   }
-  
-  .popular .items .item .info h3 {
-    color: var(--primary-text-color);
-    font-family: var(--title-font);
-    font-size: var(--text-5xl);
-  }
-  
-  .popular .items .item .info .stars {
-    align-items: center;
-    display: flex;
-    gap: 8px;
-    justify-content: center;
-    margin-top: 20px;
-    user-select: none;
-    color: #ffd700; /* Color dorado para las estrellas */
-  }
-  
-  .popular .items .item .info p {
-    color: var(--secondary-color);
-    font-weight: 400;
-    line-height: 1.5;
-    margin-top: 20px;
-  }
-  
-  .popular .items .item .footer {
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 1rem;
-    margin-top: 3.5rem;
-  }
-  
-  .popular .items .item .footer .price {
-    color: var(--primary-text-color);
-    font-family: var(--title-font);
-    font-size: var(--text-5xl);
-  }
-  
-  .popular .items .item .footer button {
-    padding: 22px 24px;
-    font-weight: 700;
-    border: none;
-    background-color: #ddd;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-  }
-  
-  .popular .items .item .footer button:hover {
-    background-color: #ccc;
-  }
-  
+}
+
+.popular .navigation {
+  display: flex;
+  gap: 20px;
+}
+
+.popular .navigation button {
+  padding: 10px;
+  border: none;
+  background-color: #ddd;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.popular .navigation button:hover {
+  background-color: #ccc;
+}
+
+.popular .items .react-multi-carousel-track {
+  gap: 20px;
+}
+
+.popular .items .item {
+  background-color: var(--white);
+  border-radius: 16px;
+  padding: 20px;
+  text-align: center;
+}
+
+.popular .items .item .img img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.popular .items .item .info {
+  margin-top: 1rem;
+}
+
+.popular .items .item .info h3 {
+  color: var(--primary-text-color);
+  font-family: var(--title-font);
+  font-size: 1.5rem;
+}
+
+.popular .items .item .info .stars {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin-top: 10px;
+  color: #ffd700; /* Gold color for stars */
+}
+
+.popular .items .item .info p {
+  color: var(--secondary-color);
+  margin-top: 10px;
+}
+
+.popular .items .item .footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.popular .items .item .footer .price {
+  color: var(--primary-text-color);
+  font-family: var(--title-font);
+  font-size: 1.25rem;
+}
+
+.popular .items .item .footer button {
+  padding: 10px 20px;
+  font-weight: 700;
+  border: none;
+  background-color: #0a0909;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.popular .items .item .footer button:hover {
+  background-color: #ccc;
+}
