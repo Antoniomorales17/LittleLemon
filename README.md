@@ -12,3 +12,8 @@ This website showcased implementing a booking application on the Little Lemon We
 
 ![mw2](https://i.imgur.com/6p36yQs.png)
 
+
+## About me
+
+Puedes contactarme en [antoniomora.gimenez@gmail.com](mailto:antoniomora.gimenez@gmail.com) o visitar mi perfil de [![LinkedIn](https://img.icons8.com/color/48/000000/linkedin.png)](https://www.linkedin.com/in/antonio-morales-gim%C3%A9nez-840034137/)
+
